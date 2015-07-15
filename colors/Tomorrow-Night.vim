@@ -351,6 +351,16 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("ShowMarksHLu", s:yellow, s:background, "none")
     call <SID>X("ShowMarksHLm", s:aqua, s:background, "none")
 
+	" Go Highlighting
+	call <SID>X("goStatement", s:purple, "", "")
+	call <SID>X("goConditional", s:purple, "", "")
+	call <SID>X("goRepeat", s:purple, "", "")
+	call <SID>X("goException", s:purple, "", "")
+	call <SID>X("goDeclaration", s:purple, "", "")
+	call <SID>X("goConstants", s:yellow, "", "")
+	call <SID>X("goBuiltins", s:orange, "", "")
+	call <SID>X("goDirective", s:purple, "", "")
+
 	" Delete Functions
 	delf <SID>X
 	delf <SID>rgb
